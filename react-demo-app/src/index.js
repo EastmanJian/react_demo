@@ -1,7 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import './index.css';
+import DemoRouter from './App';
+import registerServiceWorker from './registerServiceWorker';
 
-ReactDOM.render(
-    <h1>Hello, world!</h1>,
-    document.getElementById('root')
-);
+ReactDOM.render(<DemoRouter />, document.getElementById('root'));
+registerServiceWorker();
