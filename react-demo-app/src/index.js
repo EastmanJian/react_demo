@@ -5,14 +5,14 @@ import DemoRouter from './App';
 import registerServiceWorker from './registerServiceWorker';
 
 
-const element = <h5>This is an index page of React JS demos</h5>;
+const element = <div><hr/><h5>React JS demos, by Eastman</h5></div>;
 
 
 function tick() {
     const element = (
         <div>
-            <h3>Hello, world!</h3>
-            <h4>It is {new Date().toLocaleTimeString()}.</h4>
+            <h3>Hello, there</h3>
+            <h4>It is {new Date().toLocaleTimeString()} now.</h4>
         </div>
     );
     ReactDOM.render(
