@@ -9,6 +9,12 @@ import LoginControl from './conditionalRendering'
 import WarningToggle from './preventRendering'
 import ListWithKey from './listAndKey'
 import NameForm from './formTextInput'
+import EssayForm from './formTextArea'
+import FlavorForm from './formSelect'
+import Reservation from './formMultipleInput'
+import PreventInput from './formPreventInput'
+import Calculator from './liftStateUp'
+import SignUpDialog from './composition'
 
 import {
     BrowserRouter as Router,
@@ -33,6 +39,12 @@ const DemoRouter = () => (
             <Route path="/react_demo/prevent_rendering" component={WarningToggle}/>
             <Route path="/react_demo/list_key" component={ListWithKey}/>
             <Route path="/react_demo/form_input" component={NameForm}/>
+            <Route path="/react_demo/form_textarea" component={EssayForm}/>
+            <Route path="/react_demo/form_select" component={FlavorForm}/>
+            <Route path="/react_demo/form_multi_input" component={Reservation}/>
+            <Route path="/react_demo/form_prevent_input" component={PreventInput}/>
+            <Route path="/react_demo/lift_state_up" component={Calculator}/>
+            <Route path="/react_demo/composition" component={SignUpDialog}/>
         </div>
     </Router>
 )
@@ -53,6 +65,12 @@ const Home = () => (
             <li><Link to="/react_demo/prevent_rendering">Prevent component rendering by returning null</Link></li>
             <li><Link to="/react_demo/list_key">List, Key, map()</Link></li>
             <li><Link to="/react_demo/form_input">Controlled Component - a form with text input</Link></li>
+            <li><Link to="/react_demo/form_textarea">Controlled Component - a form with textarea</Link></li>
+            <li><Link to="/react_demo/form_select">Controlled Component - a form with select dropdown</Link></li>
+            <li><Link to="/react_demo/form_multi_input">Controlled Component - a form with multiple input</Link></li>
+            <li><Link to="/react_demo/form_prevent_input">Prevent user changing the data in a form input, and release</Link></li>
+            <li><Link to="/react_demo/lift_state_up">A temperature calculator demonstrates the Lifting State Up design rule</Link></li>
+            <li><Link to="/react_demo/composition">Using composition instead of inheritance, a Dialog and a SignUpDialog</Link></li>
         </ul>
     </div>
 )
