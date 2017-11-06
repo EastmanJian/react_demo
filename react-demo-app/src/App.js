@@ -4,6 +4,11 @@ import RouterBasic from './RouterBasic'
 import JsxJsExpression from './jsxJsExpression'
 import {WelcomeFunction, WelcomeClass} from './componentFuntionOrClass'
 import Clock from './clock'
+import {Toggle} from './eventHandling'
+import LoginControl from './conditionalRendering'
+import WarningToggle from './preventRendering'
+import ListWithKey from './listAndKey'
+import NameForm from './formTextInput'
 
 import {
     BrowserRouter as Router,
@@ -23,6 +28,11 @@ const DemoRouter = () => (
             <Route path="/react_demo/component_function" component={WelFunction}/>
             <Route path="/react_demo/component_class" component={WelClass}/>
             <Route path="/react_demo/clock" component={Clock}/>
+            <Route path="/react_demo/toggle" component={Toggle}/>
+            <Route path="/react_demo/conditional_rendering" component={LoginControl}/>
+            <Route path="/react_demo/prevent_rendering" component={WarningToggle}/>
+            <Route path="/react_demo/list_key" component={ListWithKey}/>
+            <Route path="/react_demo/form_input" component={NameForm}/>
         </div>
     </Router>
 )
@@ -37,7 +47,12 @@ const Home = () => (
             <li><Link to="/react_demo/jsx_js_expression">JSX JavaScript Expression in curly braces</Link></li>
             <li><Link to="/react_demo/component_function">Component Function</Link></li>
             <li><Link to="/react_demo/component_class">Component Class</Link></li>
-            <li><Link to="/react_demo/clock">A Clock component demonstrate state, lifecycle hook</Link></li>
+            <li><Link to="/react_demo/clock">A Clock component demonstrates state, lifecycle hook</Link></li>
+            <li><Link to="/react_demo/toggle">A button toggle demonstrates Event Handling</Link></li>
+            <li><Link to="/react_demo/conditional_rendering">Login Logout control demonstrates Conditional Rendering</Link></li>
+            <li><Link to="/react_demo/prevent_rendering">Prevent component rendering by returning null</Link></li>
+            <li><Link to="/react_demo/list_key">List, Key, map()</Link></li>
+            <li><Link to="/react_demo/form_input">Controlled Component - a form with text input</Link></li>
         </ul>
     </div>
 )
