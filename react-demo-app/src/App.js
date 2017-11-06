@@ -15,6 +15,7 @@ import Reservation from './formMultipleInput'
 import PreventInput from './formPreventInput'
 import Calculator from './liftStateUp'
 import SignUpDialog from './composition'
+import ProductTable from './thinkingInReact'
 
 import {
     BrowserRouter as Router,
@@ -45,6 +46,7 @@ const DemoRouter = () => (
             <Route path="/react_demo/form_prevent_input" component={PreventInput}/>
             <Route path="/react_demo/lift_state_up" component={Calculator}/>
             <Route path="/react_demo/composition" component={SignUpDialog}/>
+            <Route path="/react_demo/thinking_in_react" component={ProductTable}/>
         </div>
     </Router>
 )
@@ -71,6 +73,7 @@ const Home = () => (
             <li><Link to="/react_demo/form_prevent_input">Prevent user changing the data in a form input, and release</Link></li>
             <li><Link to="/react_demo/lift_state_up">A temperature calculator demonstrates the Lifting State Up design rule</Link></li>
             <li><Link to="/react_demo/composition">Using composition instead of inheritance, a Dialog and a SignUpDialog</Link></li>
+            <li><Link to="/react_demo/thinking_in_react">A Filterable Product Table App demonstrate the React Design Process</Link></li>
         </ul>
     </div>
 )
