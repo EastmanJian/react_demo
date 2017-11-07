@@ -53,7 +53,7 @@ const DemoRouter = () => (
 
 const Home = () => (
     <div>
-        <h2>Demo Home</h2>
+        <h2>React Demo Home</h2>
         <ul>
             <li><Link to="/react_demo/">Demo Home</Link></li>
             <li><Link to="/react_demo/init_app">Init App</Link></li>
